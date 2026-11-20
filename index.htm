@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S.D Cinematic</title>
+
+<style>
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{
+ margin:0;background:#080808;color:white;
+ font-family:Arial,sans-serif;
+}
+header{
+ background:#111;padding:18px;
+ text-align:center;border-bottom:1px solid gold;
+}
+.logo{font-size:27px;color:gold;font-weight:bold}
+.hero{
+ padding:65px 15px;text-align:center;
+ background:linear-gradient(135deg,#29200d,#080808);
+}
+.hero h1{font-size:40px;color:gold}
+.hero p{color:#ddd;line-height:1.7}
+section{padding:35px 15px;text-align:center}
+h2{color:gold}
+.services{
+ display:grid;grid-template-columns:1fr 1fr;
+ gap:13px;max-width:700px;margin:auto;
+}
+.card{
+ background:#171717;border:1px solid #9b792e;
+ padding:18px 10px;border-radius:12px;
+}
+.card .emoji{font-size:35px}
+.card h3{color:gold;font-size:16px}
+button,.btn{
+ background:gold;color:black;border:0;
+ padding:12px 17px;border-radius:7px;
+ font-weight:bold;cursor:pointer;
+ text-decoration:none;display:inline-block;
+ margin:6px;font-size:14px;
+}
+button:hover,.btn:hover{background:white}
+.details{
+ display:none;background:#202020;
+ border:1px solid gold;border-radius:12px;
+ padding:20px;margin:20px auto;
+ max-width:450px;text-align:left;
+}
+.details h3{color:gold}
+.details p{line-height:1.7;color:#ddd}
+.offer{
+ background:#30240b;border:1px solid gold;
+ padding:20px;border-radius:12px;
+ max-width:500px;margin:20px auto;
+}
+.offer h2{color:#ffdb72}
+.contact{background:#111}
+footer{
+ text-align:center;padding:20px;
+ color:#aaa;border-top:1px solid gold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+ <div class="logo">S.D CINEMATIC</div>
+ <p>Professional Photo & Video Shoots</p>
+</header>
+
+<div class="hero">
+ <h1>S.D CINEMATIC</h1>
+ <p>Capture Your Moments<br>
+ Create Your Memories</p>
+ <a class="btn" href="#services">EXPLORE SERVICES</a>
+ <a class="btn"
+ href="https://www.instagram.com/sd_cinematic.24/"
+ target="_blank">FOLLOW INSTAGRAM</a>
+</div>
+
+<section id="services">
+ <h2>OUR SERVICES</h2>
+ <p>Click any service to see price and details.</p>
+
+ <div class="services">
+
+  <div class="card">
+   <div class="emoji">🚘</div>
+   <h3>CAR SHOOT</h3>
+   <button onclick="show('car')">View Details</button>
+  </div>
+
+  <div class="card">
+   <div class="emoji">🏍️</div>
+   <h3>BIKE SHOOT</h3>
+   <button onclick="show('bike')">View Details</button>
+  </div>
+
+  <div class="card">
+   <div class="emoji">🏡</div>
+   <h3>HOME TOUR</h3>
+   <button onclick="show('home')">View Details</button>
+  </div>
+
+  <div class="card">
+   <div class="emoji">🎉</div>
+   <h3>PROGRAM SHOOT</h3>
+   <button onclick="show('program')">View Details</button>
+  </div>
+
+ </div>
+
+ <div id="car" class="details">
+  <h3>🚘 CAR SHOOT</h3>
+  <p>• Cinematic car video<br>
+  • Stylish camera shots<br>
+  • Instagram reel editing<br>
+  • Approx. 30-60 sec reel</p>
+  <h3>Price: ₹999</h3>
+  <button onclick="book('Car Shoot')">Book Now</button>
+ </div>
+
+ <div id="bike" class="details">
+  <h3>🏍️ BIKE SHOOT</h3>
+  <p>• Cinematic bike video<br>
+  • Rolling shots<br>
+  • Slow motion editing<br>
+  • Instagram reel</p>
+  <h3>Price: ₹499</h3>
+  <button onclick="book('Bike Shoot')">Book Now</button>
+ </div>
+
+ <div id="home" class="details">
+  <h3>🏡 HOME TOUR SHOOT</h3>
+  <p>• Beautiful home walkthrough<br>
+  • Room and interior shots<br>
+  • Cinematic video editing</p>
+  <h3>Price: ₹1499</h3>
+  <button onclick="book('Home Tour Shoot')">Book Now</button>
+ </div>
+
+ <div id="program" class="details">
+  <h3>🎉 PROGRAM / BIRTHDAY SHOOT</h3>
+  <p>• Birthday photography<br>
+  • Event video recording<br>
+  • Special moments<br>
+  • Cinematic highlights</p>
+  <h3>Price: ₹1999</h3>
+  <button onclick="book('Program / Birthday Shoot')">Book Now</button>
+ </div>
+
+</section>
+
+<section>
+ <div class="offer">
+  <h2>🎉 SPECIAL OFFER 🎉</h2>
+  <h1>20% OFF</h1>
+  <p>Follow our Instagram page and get 20% OFF on your shoot!</p>
+  <a class="btn"
+  href="https://www.instagram.com/sd_cinematic.24/"
+  target="_blank">FOLLOW NOW</a>
+  <p>Show your followed profile when booking to claim the offer.</p>
+ </div>
+</section>
+
+<section class="contact">
+ <h2>CONTACT US</h2>
+ <p>Ready to book your shoot?</p>
+
+ <a class="btn"
+ href="https://wa.me/918788443192"
+ target="_blank">WHATSAPP</a>
+
+ <a class="btn"
+ href="tel:+918788443192">CALL NOW</a>
+
+ <a class="btn"
+ href="https://www.instagram.com/sd_cinematic.24/"
+ target="_blank">INSTAGRAM</a>
+</section>
+
+<footer>
+ <h3 style="color:gold">S.D CINEMATIC</h3>
+ © 2026 All Rights Reserved.
+ <p>Made with ❤️</p>
+</footer>
+
+<script>
+function show(id){
+ const boxes=document.querySelectorAll('.details');
+ boxes.forEach(box=>box.style.display='none');
+
+ const selected=document.getElementById(id);
+ selected.style.display='block';
+ selected.scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+function book(service){
+ const message="Hello S.D Cinematic! I want to book: "+service+
+ ". Please share available dates and details.";
+ const url="https://wa.me/918788443192?text="+
+ encodeURIComponent(message);
+ window.open(url,"_blank");
+}
+</script>
+
+</body>
+</html>
